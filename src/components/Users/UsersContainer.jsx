@@ -62,6 +62,7 @@ let mapStateToProps = (state) => {
 let mapStateToProps = (state) => {
     return {
         users: getUsers(state),
+        // users: getUsers(state),
         pageSize: getPageSize(state),
         totalUsersCount: getTotalUsersCount(state),
         currentPage: getCurrentPage(state),
@@ -75,6 +76,6 @@ export default compose(
     connect(mapStateToProps, {
         follow, unfollow,
         setCurrentPage,
-        toggleFollowingProgress,requestUsers
+        toggleFollowingProgress, requestUsers
     })
 )(UsersContainer);
