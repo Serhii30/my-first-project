@@ -30,7 +30,6 @@ let Users = (props) => {
                             </NavLink>
                     </div>
                     <div>
-
                         {u.followed
                             ? <button disabled={props.followingInProgress.some(id => id === u.id)}
                                       onClick={() => {
