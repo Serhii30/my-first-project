@@ -11,7 +11,7 @@ const MyPosts = React.memo(props => {
     let postsElements =
         [...props.posts]
             .reverse()
-            .map(p => <Post message={p.message} likeCounts={p.likeCounts}/>);
+            .map(p => <Post key={p.id} message={p.message} likeCounts={p.likeCounts}/>);
 
     //
     // let newPostElement = React.createRef();
